@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>Registration using bootstrap</title>
+</head>
+<style>
+    #finalmsg{
+        display: none;
+    }
+</style>
+<body>
+    <header>
+        <div class="container-fluid bg-danger">
+            <div class="col-sm-3 p-1">
+                <img src="audi.png" class="img-fluid">
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div id='finalmsg' class="container p-5  mt-5 bg-light">
+            <p>Kindly</p><a href="login.html">LOGIN</a>
+        </div>
+
+        <br>
+        <form  id="formname" name="formname" method="post">
+            <div class="col-md-5 m-auto">
+                <div class="row">
+                    <div class="col-md">
+                        <label >First Name <sup>*</sup></label>
+                        <input type="text" id="fname" name="fname" autocomplete="off"  placeholder="Enter your First Name..." class="form-control">
+                        <p id="msgfname"></p>
+                    </div>
+                    <div class="col-md">
+                        <label >Last Name</label>
+                        <input type="text" id="lname" name="lname" autocomplete="off" placeholder="Enter your Last Name..." class="form-control">
+                    </div>
+                </div>
+                <div class="col p-0 mt-2">
+                    <label >Email<sup>*</sup></label>
+                    <input type="text" id="email" name="email" autocomplete="off"  placeholder="Enter your Email address" class="form-control">
+                    <p id="msgemail"></p>
+                </div>
+                <div class="col p-0 mt-2">
+                    <label >Password<sup>*</sup></label>
+                    <input type="password" id="pass1" name="pass1" placeholder="Enter your password" class="form-control">
+                    <p id="msgpass1"></p>
+                </div>
+                <div class="col p-0 mt-2">
+                    <label >Confirm Password<sup>*</sup></label>
+                    <input type="password" id="pass2" name="pass2" placeholder="Confirm Your password" class="form-control">
+                    <p id="msgpass2"></p>
+                </div>
+                <div class= "col m-auto pl-1">
+                    <div class="row p-0" >
+                        <div class="col p-0">
+                            <input type="checkbox" name="check" id="check">Terms and Conditions<sup>*</sup>
+                        </div>
+                        <div class="col">
+                            <a href=terms.html target="_blank">Terms and Conditions </a>
+                        </div>
+                    </div>
+                    <p id="checkmsg"></p>
+                </div>
+                <div class="row p-0" >
+                    <div class="col pl-1 m-auto">
+                        <input type="checkbox" >Subscribe For Newsletter
+                    </div>
+                </div>
+                <div class="container m-auto p-3">
+                    <center>
+                        <input type="button" onclick="validation()" id="submit" name="submit"  class="btn btn-danger" value="register">
+                    </center>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer id="footer">
+        <div class="col m-auto p-1">
+            <center>
+            <span>Not Yet registered?- <a href="Login.html">Login</a> </span>
+            </center>
+        </div>
+    </footer>
+    <script type="text/javascript" src="formvalidation.js"></script>
+</body>
+</html>
