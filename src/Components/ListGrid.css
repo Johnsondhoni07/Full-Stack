@@ -1,0 +1,12 @@
+.card{
+    width:18rem;
+    padding:10px;
+    background:rgb(255, 145, 0);;
+  }
+#grid{
+    display:flex ;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }

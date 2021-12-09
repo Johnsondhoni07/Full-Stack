@@ -1,0 +1,35 @@
+#citybutton{
+    background: rgb(255, 145, 0);
+    float: right;
+}
+#citybutton:hover{
+    background: rgb(4, 233, 23);
+}
+#modalbutton{
+    background: rgb(255, 145, 0);
+}
+#modalbutton:hover{
+    background: rgb(4,233,23);
+}
+#gridbutton{
+    background: rgb(255, 145, 0);
+} 
+#gridbutton:hover{
+    background: rgb(224, 57, 57);
+} 
+#listbutton{
+    background: rgb(255, 145, 0);   
+}
+#listbutton:hover{
+    background: rgb(224, 57, 57);
+} 
+#modalinput{
+    background-color: rgb(250, 193, 114);
+}
+#addcity{
+    background-color: rgb(7, 2, 37);
+    height: 10vh;
+}
+#modalclose:hover{
+    background: rgba(247, 2, 51, 0.61);
+}
