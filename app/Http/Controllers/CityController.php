@@ -34,5 +34,5 @@ class CityController extends Controller
     public function getcity(){
         $cities = DB::table('cities')->select('City','Country')->orderBy('id','asc')->get();
         return $cities;
-    }
+    }   
 }
