@@ -1,0 +1,41 @@
+.fle {
+  display: flex;
+  overflow-x: scroll;
+}
+.fle::-webkit-scrollbar {
+  display: none;
+}
+.rowcard {
+  /* display: inline-block; */
+  display: flex;
+  /* flex-direction: row; */
+}
+.listcard {
+  display: flex;
+  margin: 20px;
+  max-width: 15rem;
+}
+.card {
+  background-color: #E50914;
+  color: aliceblue;
+  width: 18rem;
+  padding: 5px;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: width 2s, height 2s, transform 2s;
+  cursor: pointer;
+}
+.cardimage {
+  max-height: 14rem;
+}
+.cardtitle {
+  min-height: 2rem;
+  max-height: 2rem;
+}
+.rating {
+  min-height: 1rem;
+}
+.title{
+  margin-left: 25px;
+}
