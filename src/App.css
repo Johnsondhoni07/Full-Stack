@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
+.Header__image {
+  /* max-width:15%;
+  min-width:15%; */
+  padding: 0.75%;
+  margin-left: 1%;
+  object-fit: contain;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header__button {
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgb(230, 57, 86);
+  border-color: rgb(230, 57, 86);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Header__app {
+  border-bottom: 1px solid lightgray;
+  /* background-color: rgb(235, 209, 233); */
+  /* padding: 15px; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* object-fit: contain; */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .Post__app {
+  background-color: rgb(235, 209, 233);
+  height: 100vh;
+  margin: 15px 0px 0px 15px;
+} */
+.Post__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.Post__header {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: row; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px;
+  /* border-bottom: 1px solid; */
+}
+.Post__container {
+  background-color: rgb(222, 243, 243);
+  border: 1px solid lightcyan;
+}
+.Post__username {
+  margin-left: 15px;
+}
+.Post__image {
+  max-height: fit-content;
+  object-fit: contain;
+}
+.Registration__app {
+  border-bottom: solid 1px;
+}
+.Registration__image {
+  padding: 0.75%;
+  margin-left: 1%;
+  object-fit: contain;
+}
+/* .Registration__button {
+  
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgb(230, 57, 86);
+  border-color: rgb(230, 57, 86); 
+} */
+.Login__button__login {
+  width: 70px;
+  height: 30px;
   color: white;
+  border-radius: 10px;
+  background-color: rgb(255, 185, 185);
+  border-color: rgb(230, 57, 86);
+}
+.Registration__bg {
+  background: rgb(131, 58, 180);
+  min-height: 84.6vh;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+.Login__bg {
+  min-height: 84.6vh;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+.Registration__button__sign-up {
+  min-width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgb(255, 185, 185);
+  border-color: rgb(230, 57, 86);
 }
 
-.App-link {
-  color: #61dafb;
+.Registration__button {
+  background-image: linear-gradient(
+    to right,
+    #f09819 0%,
+    #edde5d 51%,
+    #f09819 100%
+  );
+  border-color: linear-gradient(
+    to right,
+    #f09819 0%,
+    #edde5d 51%,
+    #f09819 100%
+  );
+}
+.Registration__button {
+  width: 70px;
+  height: 30px;
+  margin: 20px;
+  text-align: center;
+  /* text-transform: uppercase; */
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  /* box-shadow: 0 0 20px #eee; */
+  border-radius: 8px;
+  /* display: block; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Registration__button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.Registration__button__sign-up,
+.Login__button__login {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+}
+.Registration__button__sign-up,
+.Login__button__login {
+  margin: 10px;
+  /* padding: 15px 45px; */
+  text-align: center;
+  /* text-transform: uppercase; */
+  transition: 0.5s;
+  background-size: 200% auto;
+  /* color: rgb(0, 0, 0);             */
+  /* box-shadow: 0 0 20px #eee; */
+  border-radius: 10px;
+  display: block;
+}
+
+.Registration__button__sign-up,
+.Login__button__login:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
