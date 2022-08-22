@@ -88,7 +88,6 @@ function Forms() {
           htmlFor="email"
           label="Email Address *"
           onChange={handleOnChange}
-          onBlur={handleBlur}
         />
         <InputField
           type="number"
@@ -99,7 +98,6 @@ function Forms() {
           value={formData.mobile}
           label="Mobile Number"
           onChange={handleOnChange}
-          onBlur={handleBlur}
         />
         <InputField
           type="test"
@@ -110,7 +108,6 @@ function Forms() {
           htmlFor="country"
           label="Country"
           onChange={handleOnChange}
-          onBlur={handleBlur}
         />
         <InputField
           type="texy"
@@ -120,7 +117,6 @@ function Forms() {
           name="city"
           htmlFor="city"
           label="City"
-          onBlur={handleBlur}
           onChange={handleOnChange}
         />
         <InputField
@@ -131,7 +127,6 @@ function Forms() {
           name="state"
           htmlFor="state"
           label="State"
-          onBlur={handleBlur}
           onChange={handleOnChange}
         />
         <InputField
@@ -143,7 +138,6 @@ function Forms() {
           htmlFor="message"
           label="Message"
           className="exampleFormControlTextarea1"
-          onBlur={handleBlur}
           onChange={handleOnChange}
         />
         {errorMsg ? (
