@@ -29,7 +29,6 @@ function Forms() {
 
   const handleOnChange = useCallback(
     (e) => {
-      console.log(e.target.value);
       setFormData({
         ...formData,
         [e.target.name]: e.target.value,
@@ -68,8 +67,6 @@ function Forms() {
       setError(true);
     }
   }, [formData, errorMsg]);
-
-  console.log(errorMsg);
 
   return (
     <div>
