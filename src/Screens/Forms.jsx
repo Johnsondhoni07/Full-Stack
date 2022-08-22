@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 import InputField from "../Components/InputField";
 
 function Forms() {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const initialData = {
     name: "",
     email: "",
@@ -17,6 +18,14 @@ function Forms() {
   const [error, setError] = useState(true);
   const [errorMsg, setErrorMsg] = useState("");
   const [formData, setFormData] = useState(initialData);
+
+  const handleSubmit = useCallback(
+    (e) => {
+      e.preventDefault();
+      setFormData(initialData);
+    },
+    [initialData]
+  );
 
   const handleOnChange = useCallback(
     (e) => {
@@ -60,10 +69,8 @@ function Forms() {
     }
   }, [formData, errorMsg]);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setFormData(initialData);
-  };
+  console.log(errorMsg);
+
   return (
     <div>
       <div className="bg-success p-4">Logo</div>
@@ -88,6 +95,7 @@ function Forms() {
           htmlFor="email"
           label="Email Address *"
           onChange={handleOnChange}
+          onBlur={handleBlur}
         />
         <InputField
           type="number"
